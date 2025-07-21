@@ -1,0 +1,10 @@
+.topbar::after {
+    position: absolute;
+    content: "";
+    height: 120px;
+    width: 322px;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
+}
