@@ -1,9 +1,10 @@
 import Link from "next/link"
+import Button from "./Button"
 
 
 const Topbar = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white  mt-[100px]">
         <div className="pl-11 flex justify-between items-center">
             <ul className="flex justify-start items-center gap-10 leading-[160%] text-base">
                <li className="flex justify-center items-center gap-1.5">
@@ -20,7 +21,10 @@ const Topbar = () => {
                </li>
             </ul>
             <div className="flex justify-center items-center gap-[30px]">
-                <button className="bg-[#0D7DFB] py-[20px] px-[30px] text-white leading-[130%] font-semibold ">Get a quote</button>
+                {/* <button className="bg-[#0D7DFB] py-[20px] px-[30px] text-white leading-[130%] font-semibold ">Get a quote</button> */}
+                <Button TagName="button">
+                    Get a quote
+                </Button>
                 <div className="flex justify-center items-center gap-6 pr-5">
                     <Link href={`#`}>
                         <img src="fbIcon.svg" alt="FaceBook-icon" />
